@@ -199,6 +199,8 @@ body {
 				</a>
 		
 			
+			<input  type="text" name="what">
+			<input type="submit" name="btn" value="ok" >	
 	</div>		
 
 	<div id="footer" class="main-width"></div>	
@@ -206,40 +208,25 @@ body {
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
 $( document ).ready(function() {
-	$( "#target" ).click(function() {
-		
-	if ($( "#text" ).val() == '') {
 
-		$( "#text" ).addClass("error");
-		$("#picture").hide("slow");	
-		
-	} else {
-		$( "#text" ).removeClass("error");		
-		//$("#picture").show("slow");	
+var x = 5;	
 
-	}
-	});	
+$("#target").click(function(e) { 
+	e.preventDefault();	
+	alert("The variable  "  + x);
+});	
+
+	function myFunction(x) {
+
+    if (x < 9) {
+    	//alert
+    }
+    else {
+    	//console
+    }
 	
-		function toCelsius(fahrenheit) {
-    	return (5/9) * (fahrenheit-32);
-		}
-
-		var text = "The temperature is " + toCelsius(77) + " Celsius";
-
-		var x = toCelsius(15);
-		var text = "The temperature is "+ x +"  Celsius";
 
 
-		console.log(text)
-
-var txt = "string sdfsfgdg";
-var x = txt.length;
-
-str = "Please visit Microsoft!";
-var n = str.replace("Microsoft","W3Schools");
-
-var text1 = "Hello World!";       // Scripttring
-var text2 = text1.toUpperCase();  
 
 });
 </script>		
