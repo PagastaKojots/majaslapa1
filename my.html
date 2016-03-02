@@ -208,26 +208,21 @@ body {
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
 $( document ).ready(function() {
+	var x = 9;	
 
-var x = 5;	
-
-$("#target").click(function(e) { 
-	e.preventDefault();	
-	alert("The variable  "  + x);
-});	
+	$("#target").click(function(e) { 
+		e.preventDefault();	
+		myFunction(x);
+	});
 
 	function myFunction(x) {
-
-    if (x < 9) {
-    	//alert
-    }
-    else {
-    	//console
-    }
-	
-
-
-
+    	if (x < 9) {
+    		alert(x);
+    	}
+    	else {
+    		console.log("x>=9");
+    	}
+	}
 });
 </script>		
 </body>		
