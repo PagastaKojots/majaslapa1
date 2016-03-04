@@ -114,7 +114,8 @@ body {
 	textarea {
 		   display: block;
 		   margin: 0 auto;			
-}			
+		background-color:black;	
+}		
 	.button {
 		float: left;
 		margin-top:15px;
@@ -149,14 +150,13 @@ body {
 		
 </form>		 -->
 
-		<form action="demo_form.asp" id="form1">
+		
 
 			<label>krasulauks:</label>	
 			<input type="text" id="krasulauks" name="krasulauks"> </br>
 			
-			<input type="submit" id="submit" value="send">
-				
-		</form>		
+			<input type="button" id="submit" value="send">
+			
 
 		<div id="screen"> 	
 
@@ -218,7 +218,8 @@ body {
 			<input type="submit" name="btn" value="ok" >	
 	</div>		
 
-	<div id="footer" class="main-width"></div>	
+	<div id="footer" class="main-width"></div>		
+
 	
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
@@ -241,19 +242,29 @@ $( document ).ready(function() {
 });	
 
 (function($){
-	$("#form1").on("submit",function(e){
-		e.preventDefault();	
-		var kak = "krasulauks";
-		var krasulauks = $("#" + kak).val();
 
-		$("#krasulauks").css("background-color",krasulauks);	
+	// $("#form1").on("submit",function(e){
+	// 	e.preventDefault();	
+	// 	var kak = "krasulauks";
+	// 	var krasulauks = $("#" + kak).val();
 
-	});
+	// 	$("#krasulauks").css("background-color",krasulauks);	
+
+	// });
+
 	$("#krasulauks").on("keyup",function(e){
 		var krasulauks = $("#krasulauks").val();	
 		$("#screen").text(krasulauks);
+	});	
+
+	$("#submit").on("click",function(e)	{
+		var color = $("#krasulauks").val();	
+		$("#krasulauks").css('background-color', color);
+		$("#text").css('background-color', 'blue');	
 	});
 })(jQuery);	
+
+
 var x="duraks,daunis,kroplis";	
 x=x.split (",")	;
 console.log(x);		
