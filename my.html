@@ -123,6 +123,9 @@ body {
 
 	.error {	
 		border-color:red;
+}	
+#form1{
+	background-color: red;
 }
 </style>	
 	
@@ -134,7 +137,7 @@ body {
 </head>	
 <body> 
 
-<form action="demo_form.asp" id="form1">
+<!-- <form action="demo_form.asp" id="form1">
 
 	<label>Nick Name:</label>	
 	<input type="text" id="name" name="name"> </br>
@@ -144,10 +147,22 @@ body {
 	
 	<input type="submit" id="submit" value="send">
 		
-</form>		
-		
-	<div id="header" class="main-width">	
-		<ul class="nav-bar" >		
+</form>		 -->
+
+		<form action="demo_form.asp" id="form1">
+
+			<label>krasulauks:</label>	
+			<input type="text" id="krasulauks" name="krasulauks"> </br>
+			
+			<input type="submit" id="submit" value="send">
+				
+		</form>		
+
+		<div id="screen"> 	
+
+		</div>
+		<div id="header" class="main-width">	
+			<ul class="nav-bar" >		
 
 			<li>	
 				<a href="my.html">Start</a>		
@@ -223,7 +238,40 @@ $( document ).ready(function() {
     		console.log("x>=9");
     	}
 	}
-});
+});	
+
+(function($){
+	$("#form1").on("submit",function(e){
+		e.preventDefault();	
+		var kak = "krasulauks";
+		var krasulauks = $("#" + kak).val();
+
+		$("#krasulauks").css("background-color",krasulauks);	
+
+	});
+	$("#krasulauks").on("keyup",function(e){
+		var krasulauks = $("#krasulauks").val();	
+		$("#screen").text(krasulauks);
+	});
+})(jQuery);	
+var x="duraks,daunis,kroplis";	
+x=x.split (",")	;
+console.log(x);		
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue",
+  	
+  	fullName: function() {
+    	return this.firstName + " " + this.lastName;
+    }
+};
+
+
+var field = "lastName";
+console.log(person);
+person[field];
 </script>		
 </body>		
 </html>		
