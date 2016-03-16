@@ -1,0 +1,164 @@
+<!DOCTYPE html>			
+<head>		
+<style>			
+body{
+	background-size:cover;
+	 background-image:url('css_pictures/maxresdefault.jpg'); 		
+	 font-size:17px; 
+	 font-family: 'Dancing Script', cursive;
+	 margin:0px;			
+	 font-family: 'Oswald', sans-serif;	
+	 background-repeat: no-repeat;	
+	 background-attachment: fixed;
+}		
+
+p{		
+	
+		color:white;		
+		font-size: 30px;	
+		text-align:center;	
+	
+}	
+
+	 .nav-bar{ 
+ 		width:350px; 
+		margin:0px auto; 
+		height:90px; 
+		padding:0px 
+	
+}	
+	.nav-bar li a { 
+			color:white;	
+			font-size:30px;	
+			font-weight:lighter;	
+			text-transform:uppercase;	
+			text-decoration:none;
+			line-height:60px;	
+			padding: 14px 16px;	
+}
+	
+	input{	
+				color:black;	
+			    padding: 12px 20px;
+			    margin: 8px 0;
+			    
+}	
+input[type=text] {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;	
+   	}		
+
+
+	form{
+			color:white;	
+			margin:auto;	
+			margin:auto;	
+			font-size:20px;	
+	}	
+
+
+		
+</style>	
+
+	<meta charset="UTF-8" />
+	<title>ktochemo</title>
+	<link href="vop.css" rel="stylesheet" type="text/css" />
+	<title>Majas lapa</title> 		
+</head>		
+<body>	
+		<form>
+		Song name:  <input type="text" name="Song name"><br>		
+		Artist:	 <input type="text" name="Song name"><br>	
+		<input type="submit" value="Submit">
+		</form>			
+
+			<label>videolauks:</label>	
+			<input1 type="text" id="videolauks" name="videolauks"> </br>
+			
+			<input1 type="button" id="submit" value="submit">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>	
+<br>		
+<br>	
+<br>	
+<br>	
+<br>	
+<br>	
+
+
+    <object data="http:////www.youtube.com/embed/zGVlZBdMmm4" 
+   width="560" height="315"></object>
+
+       <object data="http:////www.youtube.com/embed/gWrptpipMjI" 
+   width="560" height="315"></object>
+
+    <object data="http:////www.youtube.com/embed/57Dh3meJ5Fs" 
+   width="560" height="315"></object>
+
+       <object data="http:////www.youtube.com/embed/xPVcnSOlSL4" 
+   width="560" height="315"></object>
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+	var x = 9;	
+	$("#target").click(function(e) { 
+		e.preventDefault();	
+		myFunction(x);
+	});
+	function myFunction(x) {
+    	if (x < 9) {
+    		alert(x);
+    	}
+    	else {
+    		console.log("x>=9");
+    	}
+	}
+});	
+(function($){
+	 $("#form1").on("submit",function(e){
+	 	e.preventDefault();	
+	 	var kak = "Song name";
+	 	var krasulauks = $("#" + kak).val();
+		$("#videolauks").css("background-color",videolauks);	
+	});
+	$("#videolauks").on("keyup",function(e){
+		var krasulauks = $("#videolauks").val();	
+		$("#screen").text(krasulauks);
+	});	
+	$("#submit").on("click",function(e)	{
+		var color = $("#Song names").val();	
+		$("#Song name").css('background-color', color);
+		$("#text").css('background-color', 'blue');	
+	});
+})(jQuery);	
+var x="duraks,daunis,kroplis";	
+x=x.split (",")	;
+console.log(x);		
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue",
+  	
+  	fullName: function() {
+    	return this.firstName + " " + this.lastName;
+    }
+};
+var field = "lastName";
+console.log(person);
+person[field];
+</script>	
+	</body>	
+	</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>			
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+<head>		
+<style>	
+body {		
+	background-size:cover;
+	 background-image:url('css_pictures/maxresdefault.jpg'); 		
+	 font-size:17px; 
+	 font-family: 'Dancing Script', cursive;
+	 margin:0px;	
+	 font-family: 'Oswald', sans-serif;		
+}	
+	h1{	
+		color:white;	
+		text-align:center;	
+					
+}		p{		
+	
+		color:white;		
+		font-size: 30px;	
+		text-align:center;	
+}			
+	img {
+		float: rightr;
+		margin:10px 850px;
+}		
+	.main-width {
+		width: 1000px;
+		margin: 0px auto;
+}			
+	#header:hover{	
+  	transition: all 0.5s linear 0s;	
+ 
+}		
+	 .nav-bar{ 
+ 		width:350px; 
+		margin:0px auto; 
+		height:90px; 
+		padding:0px 
+}		
+	.nav-bar li{	
+		display:inline-block;
+		margin-right:50px;  
+}
+	
+	.nav-bar li:last-child{ 
+		margin-center:0px;	
+}	
+
+	.nav-bar li a { 
+		color:white;	
+		font-size:16px;	
+		font-weight:lighter;	
+		text-transform:uppercase;	
+		text-decoration:none;
+		line-height:100px;	
+}
+	
+	.nav-bar li a:hover { 	
+		color:red;	
+		transition:all 0.3s linear 0s;	
+}		
+	form{	
+		margin:auto;	
+		margin:auto;	
+		font-size:15px;	
+		color:#FFFFFF;		
+}		
+	audio{		
+		float:center;
+		margin: 0 0 10px 580px;	
+}	
+	
+	
+
+</style>
+	<meta charset="UTF-8" />
+	<title>theChomodan</title>
+	<link href="vop.css" rel="stylesheet" type="text/css" />
+	<title>Majas lapa</title> 		
+		
+</head>		
+<body>	
+<form action="demo_form.asp" id="form1">
+	<label>Nick Name:</label>	
+	<input type="text" id="name" name="name"> </br>
+	
+	<label>Email:</label>	
+	<input type="email" id="email" name="email">	</br>	
+	
+	<input type="submit" id="submit" value="send">
+		
+</form>		
+	<div id="header" class="main-width">	
+		<ul class="nav-bar" >		
+
+			<li>	
+				<a href="my.html">Start</a>		
+					
+			</li>
+	
+			<li>	
+				<a href="about_us.html">chemo</a>
+
+			</li>	
+
+		</ul>		
+			
+	</div>		
+			<audio controls>
+ 			 <source src="audio.ogg" type="audio/ogg">
+ 			 <source src="music/The_Chemodan.mp3" type="audio/mpeg">	 
+		</audio>	
+		
+					 	<img id="picture" src="html_pictures/ZQbSTzVpd9M.jpg" Width="400"  </a>			
+
+
+	</div>		
+
+	<div id="footer" class="main-width"></div>		
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+
+    $("send").click(function(){
+        $("name").text("");
+    });
+});
+
+</script>		
+</body>		
+</html>		
